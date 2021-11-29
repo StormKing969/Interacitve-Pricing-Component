@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,iFAAI;AGAZ,AAAA,YAAY,CAAC;EACT,SAAS,EAAE,IAAI;EAAE,UAAU,EAAE,MAAM;CAKtC;;AAND,AAGI,YAHQ,CAGR,CAAC,CAAC;EACE,KAAK,EAAE,OAAkB;CAC5B;;AJAL,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,qBAAqB;EAClC,gBAAgB,EAAE,oCAAoC;CACzD;;AAED,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,MAAM;CAClB",
+    "sources": [
+        "../../scss/style.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_title.scss",
+        "../../scss/_card.scss",
+        "../../scss/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
