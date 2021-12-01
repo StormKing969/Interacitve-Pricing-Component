@@ -8,37 +8,78 @@
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./dist/css/style.css">
 </head>
 <body>
   <div class="container">
       <main class="title">
-        Simple, traffic-based pricing
-        Sign-up for our 30-day trial. No credit card required. 
+        <h3>Simple, traffic-based pricing</h3>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
       </main>
 
       <div class="card">
         <section class="price">
-          Pageviews
-          $ /month
+          <h3>100k Pageviews</h3>
+
+          <div class="slidecontainer">
+            <input type="range" min="1.00" max="100" step="0.01" value="50.00" class="slider" id="myRange">
+            <p>
+              <span id="output">$16.00</span>
+              <span>/month</span>
+            </p>
+          </div>
         
-          Monthly Billing
-          Yearly Billing 25% discount
+          <div class="btn">
+            <span class="first">Monthly Billing</span>
+
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>          
+              
+            <span class="last">Yearly Billing </span>
+            <label class="discount"">25%</label>
+          </div>
         </section>
 
+        <hr>
+
         <section class="package_info">
-          Unlimited websites
-          100% data ownership
-          Email reports
-        
-          Start my trial
+          <div class="icon">
+            <i class="fas fa-check">
+              <span>Unlimited websites</span>
+            </i>
+          </div>
+
+          <div class="icon">
+            <i class="fas fa-check">
+              <span>100% data ownership</span>
+            </i>
+          </div>
+
+          <div class="icon">
+            <i class="fas fa-check">
+              <span>Email reports</span>
+            </i>
+          </div>
+          <button>Start my trial</button>
         </section>
       </div>
       
       <footer class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Sajana Wijesinghe</a>.
+        <span>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        </span>
+
+          <span>
+            Coded by <a href="#">Sajana Wijesinghe</a>.
+          </span>
       </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./js/main.js"></script>
   </div> 
 </body>
 </html>

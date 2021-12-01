@@ -1,7 +1,15 @@
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
 
-    a { 
-        color: hsl(228, 45%, 44%); 
+    span {
+        margin-bottom: 5px;
+
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
     }
 }

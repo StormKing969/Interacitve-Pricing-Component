@@ -11,9 +11,18 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-image: url("../images/pattern-circles.svg");
+    background: $very-pale-blue;
+    color: $grayish-blue;
+    // background: black;
+    width: 355px;
+    margin: 0 auto;
 }
 
 .container {
     padding: 20% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

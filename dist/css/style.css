@@ -1,10 +1,196 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.title {
+  margin-bottom: 3.5rem;
 }
 
-.attribution a {
+.title h3 {
+  margin-bottom: 1rem;
+}
+
+.title p {
+  font-size: 0.8rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+}
+
+.card .price {
+  padding: 10%;
+  margin-bottom: 1rem;
+}
+
+.card .price h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.card .price .slidecontainer {
+  width: 100%;
+}
+
+.card .price .slidecontainer .slider {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 5px;
+  background: #eaeefb;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.card .price .slidecontainer .slider:hover {
+  opacity: 1;
+}
+
+.card .price .slidecontainer .slider::before {
+  background: #10d5c2;
+}
+
+.card .price .slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #10d5c2;
+  cursor: pointer;
+}
+
+.card .price .slidecontainer .slider::-webkit-slider-runnable-track {
+  background: #10d5c2;
+  height: 0.5rem;
+  border-radius: 5px;
+}
+
+.card .price .slidecontainer .slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #10d5c2;
+  cursor: pointer;
+}
+
+.card .price .slidecontainer .slider::-moz-range-progress {
+  background: #10d5c2;
+  height: 0.5rem;
+  border-radius: 5px;
+}
+
+.card .price .slidecontainer .slider::-ms-fill-lower {
+  background: #10d5c2;
+  height: 0.5rem;
+  border-radius: 5px;
+}
+
+.card .price .slidecontainer p {
+  margin: 20px 0;
+}
+
+.card .price .slidecontainer p #output {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
+}
+
+.card .price .btn {
+  width: 355px;
+  height: auto;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .price .btn .first {
+  margin-right: 15px;
+}
+
+.card .price .btn .last {
+  margin-left: 15px;
+}
+
+.card .price .btn .discount {
+  margin-left: 5px;
+  color: #ff8c66;
+  background: #feece7;
+  border-radius: 10px;
+  width: 2.2rem;
+  height: 1.2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.card hr {
+  border: 1.5px solid #fafbff;
+  width: 100%;
+}
+
+.card .package_info {
+  padding: 10%;
+  letter-spacing: 1px;
+}
+
+.card .package_info .icon {
+  margin-bottom: 1rem;
+}
+
+.card .package_info .icon .fa-check {
+  font-size: 0.6rem;
+  color: #10d5c2;
+}
+
+.card .package_info .icon .fa-check span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.6rem;
+  color: #858fad;
+}
+
+.card .package_info button {
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 20px;
+  border-style: none;
+  background: #293356;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.card .package_info button:hover {
+  color: #858fad;
+}
+
+.attribution {
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.attribution span {
+  margin-bottom: 5px;
+}
+
+.attribution span a {
   color: #3e52a3;
 }
 
@@ -17,10 +203,27 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  background-image: url("../images/pattern-circles.svg");
+  background: #fafbff;
+  color: #858fad;
+  width: 355px;
+  margin: 0 auto;
 }
 
 .container {
   padding: 20% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
