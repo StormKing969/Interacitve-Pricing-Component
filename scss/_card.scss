@@ -109,7 +109,7 @@
                     height: 0;
                 }
 
-                .slider {
+                .slider2 {
                     position: absolute;
                     cursor: pointer;
                     top: 0;
@@ -199,5 +199,14 @@
                 color: $grayish-blue;
             }
         }
+    }
+}
+
+.sliderChecked_bg {
+    @extend .slider2;
+    background-color: $strong-cyan !important;
+
+    &::before {
+        transform: translateX(14px);
     }
 }

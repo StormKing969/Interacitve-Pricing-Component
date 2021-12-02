@@ -126,7 +126,7 @@
   height: 0;
 }
 
-.card .price .btn .switch .slider {
+.card .price .btn .switch .slider2, .card .price .btn .switch .sliderChecked_bg {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -138,7 +138,7 @@
   transition: .4s;
 }
 
-.card .price .btn .switch .slider::before {
+.card .price .btn .switch .slider2::before, .card .price .btn .switch .sliderChecked_bg::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -214,6 +214,15 @@
 
 .card .package_info button:hover {
   color: #858fad;
+}
+
+.sliderChecked_bg {
+  background-color: #10d5c2 !important;
+}
+
+.sliderChecked_bg::before {
+  -webkit-transform: translateX(14px);
+          transform: translateX(14px);
 }
 
 .attribution {
