@@ -9,3 +9,29 @@
         font-size: 0.8rem;
     }
 }
+
+
+@media (min-width: 755px) {
+    .title {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "t t"
+            "p1 p2";
+        column-gap: 0;
+
+        h3 {
+            grid-area: t;
+        }
+
+        para_1 {
+            grid-area: p1;
+        }
+
+        para_2 {
+            grid-area: p2;
+            
+        }
+    }
+}

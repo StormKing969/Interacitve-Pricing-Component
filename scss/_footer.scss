@@ -13,3 +13,13 @@
         }
     }
 }
+
+@media (min-width: 755px) {
+    .attribution {
+        flex-direction: row;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}
