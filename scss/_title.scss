@@ -17,20 +17,20 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-            "t t"
-            "p1 p2";
+            "title_location title_location"
+            "p1_location p2_location";
         column-gap: 0;
 
         h3 {
-            grid-area: t;
+            grid-area: title_location;
         }
 
         para_1 {
-            grid-area: p1;
+            grid-area: p1_location;
         }
 
         para_2 {
-            grid-area: p2;
+            grid-area: p2_location;
             
         }
     }

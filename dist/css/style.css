@@ -19,7 +19,7 @@
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "t t" "p1 p2";
+        grid-template-areas: "title_location title_location" "p1_location p2_location";
     -webkit-column-gap: 0;
             column-gap: 0;
   }
@@ -27,17 +27,17 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: t;
+    grid-area: title_location;
   }
   .title para_1 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: p1;
+    grid-area: p1_location;
   }
   .title para_2 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
-    grid-area: p2;
+    grid-area: p2_location;
   }
 }
 
@@ -116,11 +116,11 @@
   border-radius: 5px;
 }
 
-.card .price .slidecontainer p {
+.card .price p {
   margin: 20px 0;
 }
 
-.card .price .slidecontainer p #output {
+.card .price p #output {
   font-size: 1.5rem;
   font-weight: 800;
   color: black;
@@ -137,10 +137,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 auto;
 }
 
 .card .price .btn .first {
-  margin-right: 15px;
+  margin-right: 5%;
 }
 
 .card .price .btn .switch {
@@ -189,7 +190,7 @@
 }
 
 .card .price .btn .last {
-  margin-left: 15px;
+  margin-left: 5%;
 }
 
 .card .price .btn .discount {
@@ -253,6 +254,52 @@
 .sliderChecked_bg::before {
   -webkit-transform: translateX(14px);
           transform: translateX(14px);
+}
+
+@media (min-width: 755px) {
+  .card {
+    width: 500px;
+    height: auto;
+  }
+  .card .price {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "header_location " "amount_slider";
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .price h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header_location;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: auto 0;
+  }
+  .card .price .slidecontainer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: amount_slider;
+    margin-top: 7%;
+    margin-bottom: 10%;
+  }
+  .card .price p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header_location;
+    text-align: right;
+    margin: auto 0;
+  }
+  .card .price .btn .first {
+    margin: 0 auto;
+  }
 }
 
 .attribution {
