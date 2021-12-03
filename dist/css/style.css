@@ -214,16 +214,16 @@
   letter-spacing: 1px;
 }
 
-.card .package_info .icon {
+.card .package_info .icon_container .icon {
   margin-bottom: 1rem;
 }
 
-.card .package_info .icon .fa-check {
+.card .package_info .icon_container .icon .fa-check {
   font-size: 0.6rem;
   color: #10d5c2;
 }
 
-.card .package_info .icon .fa-check span {
+.card .package_info .icon_container .icon .fa-check span {
   font-family: 'Manrope', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
@@ -232,7 +232,7 @@
 }
 
 .card .package_info button {
-  width: 60%;
+  width: 70%;
   height: 2.5rem;
   border-radius: 20px;
   border-style: none;
@@ -262,6 +262,7 @@
     height: auto;
   }
   .card .price {
+    width: 100%;
     display: -ms-inline-grid;
     display: inline-grid;
     -ms-grid-columns: 1fr;
@@ -297,8 +298,63 @@
     text-align: right;
     margin: auto 0;
   }
+  .card .price .btn {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
   .card .price .btn .first {
-    margin: 0 auto;
+    margin-right: 5%;
+  }
+  .card .price .btn .switch {
+    width: 44px;
+    height: 22px;
+  }
+  .card .price .btn .switch .slider2::before, .card .price .btn .switch .sliderChecked_bg::before {
+    height: 11px;
+    width: 11px;
+    left: 4px;
+    bottom: 6px;
+  }
+  .card .price .btn .discount {
+    margin-left: 5%;
+    border-radius: 10px;
+    width: 6.7rem;
+    height: 1.3rem;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .card .price .btn .discount::after {
+    content: " Discount";
+  }
+  .card .package_info {
+    margin-top: 0;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "info_details start_button";
+    position: relative;
+  }
+  .card .icon_container .icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info_details;
+  }
+  .card button {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: start_button;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    position: absolute;
+    top: 10%;
+  }
+  .sliderChecked_bg::before {
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
   }
 }
 

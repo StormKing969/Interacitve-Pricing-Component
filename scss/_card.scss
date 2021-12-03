@@ -170,26 +170,28 @@
         padding: 10%;
         letter-spacing: 1px;
         // margin: 0.5rem 0 0;
+        .icon_container {
 
-        .icon {
-            margin-bottom: 1rem;
-            
-            .fa-check {
-                font-size: 0.6rem;
-                color: $strong-cyan;
-
-                span {
-                    font-family: 'Manrope', sans-serif;
-                    font-size: 0.8rem;
-                    font-weight: 600;
-                    margin-left: 0.6rem;
-                    color: $grayish-blue;
+            .icon {
+                margin-bottom: 1rem;
+                
+                .fa-check {
+                    font-size: 0.6rem;
+                    color: $strong-cyan;
+    
+                    span {
+                        font-family: 'Manrope', sans-serif;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        margin-left: 0.6rem;
+                        color: $grayish-blue;
+                    }
                 }
             }
         }
 
         button {
-            width: 60%;
+            width: 70%;
             height: 2.5rem;
             border-radius: 20px;
             border-style: none;
@@ -222,6 +224,7 @@
         height: auto;
 
         .price {
+            width: 100%;
             display: inline-grid;
             grid-template-columns: 1fr ;
             grid-template-rows: 1fr 1fr;
@@ -251,12 +254,75 @@
             }
 
             .btn {
+                width: 100%;
+                margin-bottom: 0;
+                font-size: 0.9rem;
 
                 .first {
-                    margin: 0 auto;
+                    margin-right: 5%;
+                }
+
+                .switch {
+                    width: 44px;
+                    height: 22px;
+    
+                    .slider2 {
+
+                        &::before {
+                            height: 11px;
+                            width: 11px;
+                            left: 4px;
+                            bottom: 6px;
+                        }
+                    }
+                }
+
+                .discount {
+                    margin-left: 5%;
+                    border-radius: 10px;
+                    width: 6.7rem;
+                    height: 1.3rem;
+                    text-align: center;
+                    opacity: 0.8;
+
+                    &::after {
+                        content: " Discount";
+                    }
                 }
             }
         }
 
+        .package_info {
+            margin-top: 0;
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "info_details start_button";
+            position: relative;
+        }
+
+        .icon_container {
+            .icon {
+                grid-area: info_details;
+                // margin-bottom: 20px;
+            }
+        }
+
+        button {
+            grid-area: start_button;
+            justify-self: end;
+            // margin: 0 auto;
+            position: absolute;
+            top: 10%;
+
+        }
+    }
+
+    .sliderChecked_bg {
+
+        &::before {
+            transform: translateX(26px);
+        }
     }
 }
