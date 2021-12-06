@@ -404,11 +404,21 @@ body {
   font-family: 'Manrope', sans-serif;
   background: #fafbff;
   color: #858fad;
-  width: 355px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+
+body .bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .container {
+  z-index: 1;
+  width: 355px;
+  margin: 0 auto;
   padding: 20% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,6 +434,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.container img {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  top: 5%;
 }
 
 @media (min-width: 755px) {

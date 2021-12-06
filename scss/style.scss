@@ -14,17 +14,34 @@ body {
     background: $very-pale-blue;
     color: $grayish-blue;
     // background: black;
-    width: 355px;
+    width: 100%;
     margin: 0 auto;
+    position: relative;
+
+    .bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
 }
 
 .container {
+    z-index: 1;
+    width: 355px;
+    margin: 0 auto;
     padding: 20% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    img {
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        top: 5%;
+    }
 }
 
 @media (min-width: 755px) {
